@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450" width="720" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090F"/>
+      <stop offset="60%" stop-color="#0D1020"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f35"/>
+      <stop offset="100%" stop-color="#0a0d1a"/>
+    </linearGradient>
+    <linearGradient id="flagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CC0000" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#CC0000" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#CC0000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFCC00" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFCC00" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFCC00" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#CC0000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#CC0000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#FFCC00" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FFCC00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="screenLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e2847"/>
+      <stop offset="100%" stop-color="#0a0d1a"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="softGlow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="450" fill="url(#bg)"/>
+  <!-- Glow orbs -->
+  <ellipse cx="216" cy="180" rx="280" ry="220" fill="url(#glow1)"/>
+  <ellipse cx="540" cy="135" rx="260" ry="200" fill="url(#glow2)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#FFCC00" stroke-width="0.5">
+    <line x1="0" y1="75" x2="720" y2="75"/>
+    <line x1="0" y1="150" x2="720" y2="150"/>
+    <line x1="0" y1="225" x2="720" y2="225"/>
+    <line x1="0" y1="300" x2="720" y2="300"/>
+    <line x1="0" y1="375" x2="720" y2="375"/>
+    <line x1="90" y1="0" x2="90" y2="450"/>
+    <line x1="180" y1="0" x2="180" y2="450"/>
+    <line x1="270" y1="0" x2="270" y2="450"/>
+    <line x1="360" y1="0" x2="360" y2="450"/>
+    <line x1="450" y1="0" x2="450" y2="450"/>
+    <line x1="540" y1="0" x2="540" y2="450"/>
+    <line x1="630" y1="0" x2="630" y2="450"/>
+  </g>
+
+  <!-- Main TV/Monitor Frame -->
+  <rect x="180" y="55" width="360" height="230" rx="14" fill="url(#screenGlow)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <!-- Screen inner glow -->
+  <rect x="184" y="59" width="352" height="222" rx="12" fill="url(#screenLight)"/>
+
+  <!-- Screen content: football pitch top-down view -->
+  <rect x="200" y="72" width="320" height="196" rx="8" fill="#0f2a1a"/>
+  <!-- Pitch lines -->
+  <rect x="200" y="72" width="320" height="196" rx="8" fill="none" stroke="#1e5a30" stroke-width="8"/>
+  <line x1="360" y1="72" x2="360" y2="268" stroke="#1e5a30" stroke-width="2"/>
+  <circle cx="360" cy="170" r="28" fill="none" stroke="#1e5a30" stroke-width="2"/>
+  <circle cx="360" cy="170" r="3" fill="#1e5a30"/>
+  <rect x="310" y="72" width="100" height="36" fill="none" stroke="#1e5a30" stroke-width="2"/>
+  <rect x="310" y="232" width="100" height="36" fill="none" stroke="#1e5a30" stroke-width="2"/>
+  <rect x="330" y="72" width="60" height="18" fill="none" stroke="#1e5a30" stroke-width="2"/>
+  <rect x="330" y="250" width="60" height="18" fill="none" stroke="#1e5a30" stroke-width="2"/>
+  <!-- Players -->
+  <circle cx="320" cy="130" r="5" fill="#FFCC00" filter="url(#glow)"/>
+  <circle cx="390" cy="115" r="5" fill="#FFCC00" filter="url(#glow)"/>
+  <circle cx="340" cy="170" r="5" fill="#FFCC00" filter="url(#glow)"/>
+  <circle cx="290" cy="160" r="5" fill="#FFCC00" filter="url(#glow)"/>
+  <circle cx="410" cy="180" r="5" fill="#FFCC00" filter="url(#glow)"/>
+  <circle cx="360" cy="220" r="5" fill="#FFCC00" filter="url(#glow)"/>
+  <!-- Opponents -->
+  <circle cx="350" cy="145" r="5" fill="#CC0000" filter="url(#glow)"/>
+  <circle cx="380" cy="200" r="5" fill="#CC0000" filter="url(#glow)"/>
+  <circle cx="430" cy="145" r="5" fill="#CC0000" filter="url(#glow)"/>
+  <circle cx="310" cy="195" r="5" fill="#CC0000" filter="url(#glow)"/>
+  <circle cx="370" cy="240" r="5" fill="#CC0000" filter="url(#glow)"/>
+  <!-- LIVE badge on screen -->
+  <rect x="210" y="82" width="44" height="20" rx="4" fill="#CC0000"/>
+  <text x="232" y="96" font-family="Arial Black,sans-serif" font-size="10" font-weight="900" fill="white" text-anchor="middle">LIVE</text>
+  <!-- Score overlay -->
+  <rect x="308" y="82" width="104" height="28" rx="6" fill="rgba(0,0,0,0.75)"/>
+  <text x="360" y="100" font-family="Arial Black,sans-serif" font-size="14" font-weight="900" fill="white" text-anchor="middle">GER  2:1  ESP</text>
+
+  <!-- TV Stand -->
+  <rect x="345" y="285" width="30" height="25" rx="2" fill="#1a1f35"/>
+  <rect x="310" y="308" width="100" height="8" rx="4" fill="#1a1f35"/>
+
+  <!-- German flag stripe left decoration -->
+  <rect x="48" y="55" width="6" height="230" rx="3" fill="#111111"/>
+  <rect x="58" y="55" width="6" height="230" rx="3" fill="#CC0000"/>
+  <rect x="68" y="55" width="6" height="230" rx="3" fill="#FFCC00"/>
+
+  <!-- Floating UI cards -->
+  <!-- Card 1: 4K badge -->
+  <rect x="36" y="130" width="90" height="50" rx="10" fill="rgba(8,10,18,0.92)" stroke="rgba(255,204,0,0.3)" stroke-width="1"/>
+  <text x="81" y="153" font-family="Arial Black,sans-serif" font-size="22" font-weight="900" fill="#FFCC00" text-anchor="middle" filter="url(#glow)">4K</text>
+  <text x="81" y="170" font-family="Arial,sans-serif" font-size="9" fill="#8892A4" text-anchor="middle" letter-spacing="2">ULTRA HD</text>
+
+  <!-- Card 2: channels -->
+  <rect x="594" y="110" width="100" height="56" rx="10" fill="rgba(8,10,18,0.92)" stroke="rgba(204,0,0,0.3)" stroke-width="1"/>
+  <text x="644" y="138" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#CC0000" text-anchor="middle" filter="url(#glow)">20K+</text>
+  <text x="644" y="155" font-family="Arial,sans-serif" font-size="9" fill="#8892A4" text-anchor="middle" letter-spacing="1">SENDER LIVE</text>
+
+  <!-- Card 3: activation -->
+  <rect x="594" y="200" width="100" height="56" rx="10" fill="rgba(8,10,18,0.92)" stroke="rgba(255,204,0,0.2)" stroke-width="1"/>
+  <text x="644" y="228" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#FFCC00" text-anchor="middle">3 MIN</text>
+  <text x="644" y="244" font-family="Arial,sans-serif" font-size="9" fill="#8892A4" text-anchor="middle" letter-spacing="1">AKTIVIERUNG</text>
+
+  <!-- Bottom accent lines -->
+  <rect x="0" y="400" width="720" height="1" fill="url(#goldLine)" opacity="0.6"/>
+  <rect x="0" y="403" width="720" height="1" fill="url(#flagGrad)" opacity="0.4"/>
+
+  <!-- Brand text -->
+  <text x="360" y="360" font-family="Arial Black,sans-serif" font-size="13" font-weight="900" fill="white" text-anchor="middle" letter-spacing="6" opacity="0.5">GERMANY-IPTV.COM</text>
+
+  <!-- Scanline overlay for cinematic feel -->
+  <rect width="720" height="450" fill="url(#bg)" opacity="0.03"/>
+
+  <!-- Top German flag mini bar -->
+  <rect x="0" y="0" width="720" height="4" fill="#111111"/>
+  <rect x="0" y="4" width="720" height="4" fill="#CC0000"/>
+  <rect x="0" y="8" width="720" height="4" fill="#FFCC00"/>
+</svg>

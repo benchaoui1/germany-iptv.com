@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#333"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="48" height="48" rx="11"/>
+    </clipPath>
+  </defs>
+  <!-- Background -->
+  <rect width="48" height="48" rx="11" fill="url(#g1)"/>
+  <!-- German flag stripes -->
+  <rect y="0"  width="48" height="16" fill="#111111" clip-path="url(#clip)"/>
+  <rect y="16" width="48" height="16" fill="#CC0000" clip-path="url(#clip)"/>
+  <rect y="32" width="48" height="16" fill="#FFCC00" clip-path="url(#clip)"/>
+  <!-- Rounded mask -->
+  <rect width="48" height="48" rx="11" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <!-- Signal/Play icon -->
+  <path d="M19 15 L33 24 L19 33 Z" fill="white" opacity="0.95"/>
+</svg>

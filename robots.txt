@@ -1,0 +1,20 @@
+# robots.txt — germany-iptv.com
+# Letzte Aktualisierung: 2026-06-02
+
+User-agent: *
+Allow: /
+
+# Rechtliche Seiten und Fehlerseiten steuern wir per noindex-Meta-Tag, damit Google die Direktive sehen kann.
+
+# Sitemap
+Sitemap: https://germany-iptv.com/sitemap.xml
+
+# Crawl-Delay für aggressive Bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
